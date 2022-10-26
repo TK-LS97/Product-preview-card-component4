@@ -1,0 +1,165 @@
+html{
+    font-size: 100%; //user can choose zoom level
+    box-sizing: border box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+.bigdiv{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+
+body{
+    background-color:$Cream;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Fraunces', serif;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    margin-bottom:-5px;
+    font-size:1.6875rem; //27px 
+}
+
+h4{
+    font-size:$FontSize;//14px;
+}
+
+.container{
+    background-color:$White;
+    //flex-wrap:wrap;
+    margin-top:175px;
+    width:325px; //345px 
+    border-radius:10px;
+    text-align:left;
+    
+    &__color{
+        
+        color:$DarkGrayishBlue;
+        font-weight:500;
+    }
+
+    &__font{ //body font
+        font-size:$FontSize;
+        line-height:1.6;
+    }
+
+}
+
+.inner-content{
+  
+    margin:30px;
+    margin-right:35px;
+    padding-right:30px;
+    //margin-bottom: 20px;
+}
+
+.text{
+    margin-top:-15px;
+    margin-bottom: -30px;
+
+}
+
+
+.cash{
+    display:flex;
+    &__cashh{
+        font-size:1.875rem; //30px;
+        color:$DarkCyan;
+        font-family: 'Fraunces', serif;
+    }
+    
+}
+
+button, .button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border:none;
+    background-color:$DarkCyan;
+    cursor:pointer;
+    width:280px;
+    height:45px;
+    //padding-top:8px;
+    //padding-bottom:8px;
+    color:$White;
+    //margin-left:13px;
+    margin-right:10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover{
+    background-color:$VeryDarkBlue;
+
+}
+
+.past_price{
+    padding-left:20px;
+    padding-top: 25px;
+    text-decoration: line-through;
+}
+
+.cart{
+   margin-right:8px;
+}
+
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display:none;
+        }
+    }
+
+.hide-for-mobile2{
+    @include breakpoint-down(medium){
+        width:21.5625rem; //345px
+        height: 612px;
+        margin-top: 70px;
+    }
+}
+
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display:none;
+    }
+}
+
+.hide-for-desktop2{
+    @include breakpoint-up(large){
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        width:40.625rem;//650px;
+        height:450px;
+
+        &__deskbtn{
+            margin-bottom:30px;
+        }
+        
+        &__h4{
+            margin-top:-10px;
+            margin-bottom: 45px;
+        }
+
+        &__text{
+            margin-top:-30px;
+        }
+    }
+}
+
+.desktop{
+    border-radius:10px 0 0 10px;
+    width:325px; height:450px;
+    padding-left:0;
+    margin-top:3px;
+    margin-left:5px;
+    padding-bottom:0px;
+}
+
+.mobile-pic{
+    border-radius:10px 10px 0 0;
+}

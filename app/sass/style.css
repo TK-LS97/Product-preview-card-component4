@@ -1,0 +1,148 @@
+html {
+  font-size: 100%;
+  box-sizing: border box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.bigdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  margin-bottom: -5px;
+  font-size: 1.6875rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+.container {
+  background-color: hsl(0deg, 0%, 100%);
+  margin-top: 175px;
+  width: 325px;
+  border-radius: 10px;
+  text-align: left;
+}
+.container__color {
+  color: hsl(228deg, 12%, 48%);
+  font-weight: 500;
+}
+.container__font {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.inner-content {
+  margin: 30px;
+  margin-right: 35px;
+  padding-right: 30px;
+}
+
+.text {
+  margin-top: -15px;
+  margin-bottom: -30px;
+}
+
+.cash {
+  display: flex;
+}
+.cash__cashh {
+  font-size: 1.875rem;
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+
+button, .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+  width: 280px;
+  height: 45px;
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+  background-color: hsl(212deg, 21%, 14%);
+}
+
+.past_price {
+  padding-left: 20px;
+  padding-top: 25px;
+  text-decoration: line-through;
+}
+
+.cart {
+  margin-right: 8px;
+}
+
+@media (max-width: 89.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 89.9375em) {
+  .hide-for-mobile2 {
+    width: 21.5625rem;
+    height: 612px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 90em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 90em) {
+  .hide-for-desktop2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40.625rem;
+    height: 450px;
+  }
+  .hide-for-desktop2__deskbtn {
+    margin-bottom: 30px;
+  }
+  .hide-for-desktop2__h4 {
+    margin-top: -10px;
+    margin-bottom: 45px;
+  }
+  .hide-for-desktop2__text {
+    margin-top: -30px;
+  }
+}
+
+.desktop {
+  border-radius: 10px 0 0 10px;
+  width: 325px;
+  height: 450px;
+  padding-left: 0;
+  margin-top: 3px;
+  margin-left: 5px;
+  padding-bottom: 0px;
+}
+
+.mobile-pic {
+  border-radius: 10px 10px 0 0;
+}/*# sourceMappingURL=style.css.map */
